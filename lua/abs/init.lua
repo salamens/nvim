@@ -1,6 +1,7 @@
 require("abs.remap")
+require("abs.set")
 
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
